@@ -32,10 +32,6 @@ module.exports = function(config) {
       'test/**/*.js': ['browserify']
     },
 
-    "babelPreprocessor": {
-      // options go here
-    },
-
     browserify: {
       debug: true,
       transform: [["babelify", { "presets": ["es2015"] }]]
