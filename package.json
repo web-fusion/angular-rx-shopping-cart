@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-minify-webpack-plugin": "^0.2.0",
@@ -21,8 +23,9 @@
     "webpack": "^3.5.5"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "karma start"
   },
   "author": "denis.yu.smirnov@gmail.com",
-  "license": "ISC"
+  "license": "MIT"
 }

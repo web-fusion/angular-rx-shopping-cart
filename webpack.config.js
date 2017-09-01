@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/a.js',
+  entry: './src/index.js',
   output: {
-    filename: 'app.js',
+    filename: 'angular-rx-shopping-card.js',
     path: path.resolve(__dirname, 'dist')
   }
 }

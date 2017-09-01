@@ -1,3 +1,10 @@
-const getMessage = () => 'Hello World';
+import _ from 'lodash';
 
-export { getMessage };
+const getMessage = () => {
+	_.map(_.range(10), (i) => console.log(i));
+	return 'Hello World';
+};
+
+getMessage();
+
+export { getMessage }
