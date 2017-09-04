@@ -1,10 +1,8 @@
-import _ from 'lodash';
-
-const getMessage = () => {
-	_.map(_.range(10), (i) => console.log(i));
-	return 'Hello World';
+"use strict";
+exports.__esModule = true;
+var _ = require("lodash");
+exports.getMessage = function () {
+    _.map(_.range(10), function (i) { return console.log(i); });
+    return "Hello World";
 };
-
-getMessage();
-
-export { getMessage }
+exports.getMessage();
