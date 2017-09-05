@@ -1,5 +1,4 @@
 const path = require('path');
-var createLodashAliases = require('lodash-loader').createLodashAliases;
 
 module.exports = {
     entry: './src/index.ts',
@@ -8,14 +7,16 @@ module.exports = {
         rules: [
             {
                 exclude: /node_modules/,
-                loader: 'ts-loader!lodash-loader',
-                test: /\.tsx?$/
+                test: /\.tsx?$/,
+                use: [
+                    { loader: 'ts-loader' },
+                    { loader: 'lodash-ts-imports-loader' }
+                ]
             }
         ]
     },
     resolve: {
-        alias: createLodashAliases(),
-        extensions: [ ".tsx", ".ts", ".js" ]
+        extensions: [ '.tsx', '.ts', '.js' ]
     },
     output: {
         filename: 'angular-rx-shopping-cart.js',

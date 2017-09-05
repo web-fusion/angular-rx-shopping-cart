@@ -14,14 +14,14 @@
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-typescript": "^3.0.5",
-    "lodash-loader": "^1.2.0",
+    "lodash-ts-imports-loader": "^1.1.2",
     "ts-loader": "^2.3.4",
     "typescript": "^2.5.2",
     "webpack": "^3.5.5"
   },
   "scripts": {
-    "build": "webpack",
-    "test": "karma start"
+    "build": "node node_modules/webpack/bin/webpack",
+    "test": "node node_modules/karma/bin/karma start"
   },
   "author": "denis.yu.smirnov@gmail.com",
   "license": "MIT"

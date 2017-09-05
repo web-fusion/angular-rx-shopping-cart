@@ -1,6 +1,6 @@
-import * as _ from 'lodash';
+import { map, range } from 'lodash';
 
 export let getMessage = (): string => {
-    _.map(_.range(10), (i): void => { console.log(i) });
+    map(range(10), (i): void => { console.log(i) });
     return 'Hello World';
 };
